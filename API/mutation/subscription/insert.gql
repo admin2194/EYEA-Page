@@ -1,0 +1,5 @@
+mutation Subscribe($email: String!) {
+  insert_subscriptions(objects: { email: $email }) {
+    affected_rows
+  }
+}

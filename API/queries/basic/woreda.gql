@@ -1,0 +1,7 @@
+query region($filter:basic_woreda_towns_bool_exp){
+  items:basic_woreda_towns(where:$filter){
+    id
+    name
+  
+  }
+}

@@ -1,0 +1,12 @@
+mutation ($pricing_plan_frequency_id: String!, $billing_id: String!) {
+  items: generate_invoice(
+    billing_id: $billing_id
+    pricing_plan_frequency_id: $pricing_plan_frequency_id
+  ) {
+    data {
+      id
+      invoice_number
+    }
+  
+  }
+}

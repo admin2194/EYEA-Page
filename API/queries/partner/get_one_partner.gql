@@ -1,0 +1,10 @@
+query get_one_parter($id: uuid!) {
+  item:content_program_partners_by_pk(id: $id) {
+    id
+    logo_url
+    mou_content
+    name
+    site_url
+    type
+  }
+}

@@ -1,0 +1,5 @@
+mutation($billing: pricing_billing_insert_input!){
+  billing:insert_pricing_billing_one(object: $billing){
+    id
+  }
+}

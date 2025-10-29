@@ -1,0 +1,82 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "paths": {
+      "#imports": [
+        "C:/Users/aman2/eyea-pubilic-page/.nuxt/types/nitro-imports"
+      ],
+      "#paths": [
+        "C:/Users/aman2/eyea-pubilic-page/node_modules/nuxt/dist/core/runtime/nitro/paths"
+      ],
+      "~": [
+        "C:/Users/aman2/eyea-pubilic-page"
+      ],
+      "~/*": [
+        "C:/Users/aman2/eyea-pubilic-page/*"
+      ],
+      "@": [
+        "C:/Users/aman2/eyea-pubilic-page"
+      ],
+      "@/*": [
+        "C:/Users/aman2/eyea-pubilic-page/*"
+      ],
+      "~~": [
+        "C:/Users/aman2/eyea-pubilic-page"
+      ],
+      "~~/*": [
+        "C:/Users/aman2/eyea-pubilic-page/*"
+      ],
+      "@@": [
+        "C:/Users/aman2/eyea-pubilic-page"
+      ],
+      "@@/*": [
+        "C:/Users/aman2/eyea-pubilic-page/*"
+      ],
+      "assets": [
+        "C:/Users/aman2/eyea-pubilic-page/assets"
+      ],
+      "assets/*": [
+        "C:/Users/aman2/eyea-pubilic-page/assets/*"
+      ],
+      "public": [
+        "C:/Users/aman2/eyea-pubilic-page/public"
+      ],
+      "public/*": [
+        "C:/Users/aman2/eyea-pubilic-page/public/*"
+      ],
+      "#image": [
+        "C:/Users/aman2/eyea-pubilic-page/node_modules/@nuxt/image/dist/runtime"
+      ],
+      "#image/*": [
+        "C:/Users/aman2/eyea-pubilic-page/node_modules/@nuxt/image/dist/runtime/*"
+      ],
+      "#apollo": [
+        "C:/Users/aman2/eyea-pubilic-page/.nuxt/apollo"
+      ],
+      "#color-mode-options": [
+        "C:/Users/aman2/eyea-pubilic-page/.nuxt/color-mode-options"
+      ],
+      "pinia": [
+        "C:/Users/aman2/eyea-pubilic-page/node_modules/pinia/dist/pinia"
+      ],
+      "#content/server": [
+        "C:/Users/aman2/eyea-pubilic-page/node_modules/@nuxt/content/dist/runtime/server/index"
+      ]
+    }
+  },
+  "include": [
+    "C:/Users/aman2/eyea-pubilic-page/.nuxt/types/nitro-nuxt.d.ts",
+    "./types/nitro.d.ts",
+    "../**/*",
+    "../server/**/*"
+  ]
+}

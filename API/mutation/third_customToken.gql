@@ -1,0 +1,7 @@
+
+query  {
+  third_party_auth{
+    custom_access_token
+    me_access_token
+  }
+}

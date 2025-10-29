@@ -1,0 +1,11 @@
+query get_one_magazine($id: uuid!) {
+  content_magazines_by_pk(id: $id) {
+    id
+    version
+    image_url
+    title
+    is_draft
+    released_at
+    pdf_url
+  }
+}

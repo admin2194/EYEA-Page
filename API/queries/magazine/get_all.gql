@@ -1,0 +1,13 @@
+query get_all_magazines($filter: content_magazines_bool_exp) {
+  content_magazines(where: $filter) {
+    created_at
+    created_by
+    id
+    image_url
+    title
+    is_draft
+    released_at
+    pdf_url
+    version
+  }
+}

@@ -1,0 +1,49 @@
+query get_invoice($filter: String!) {
+  member: user_individual_membership(where:{memberships:{
+    membership_id:{_eq:$filter}
+  }}) {
+    first_name
+    last_name
+    phone_number
+    email
+    memberships{
+        membership_id
+        pricing_plan_frequency_id
+    pricing_plan_frequency_price  {
+      id
+      frequency
+      lump_sum_price
+      pricing_plan {
+        name
+      }
+    }
+    }
+  
+  }
+  
+  invoice: pricing_invoice(
+    where: { billing: { membership_id: { _eq: $filter } } }
+  ) {
+    id
+    created_at
+    date
+    end_date
+    status
+    payment_method
+    invoice_number
+    has_member_paid
+    reason
+    sub_total
+    tax
+    total
+    billing {
+      payment_method
+      address
+    }
+  }
+}
+# {
+#   individual_membership{
+#     membership_id
+#   }
+# }

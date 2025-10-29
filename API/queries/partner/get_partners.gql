@@ -1,0 +1,28 @@
+query get_all_partners ($filter:content_program_partners_bool_exp){
+  items:content_program_partners(where:$filter){
+    logo_url
+    id
+    mou_content
+  }
+  government_count: content_program_partners_aggregate(where: {type: {_eq: government}}) {
+    aggregate {
+      count
+    }
+  }
+  private_count: content_program_partners_aggregate(where: {type: {_eq: private}}) {
+    aggregate {
+      count
+    }
+  }
+   NGO_count: content_program_partners_aggregate(where: {type: {_eq: NGO}}) {
+    aggregate {
+      count
+    }
+  }
+    items2:content_program_partners (order_by: {created_at: asc}){
+    logo_url
+    mou_content
+    id
+    name
+  }
+}

@@ -1,0 +1,1 @@
+import{B as l,r as e,aj as c}from"./entry.9f9a9dfb.js";l();const i=e("user"),f=e("user");function m(t,{clientId:o=i,role:r=f}){const{mutate:a,onDone:n,loading:u,onError:s}=c(t,()=>({fetchPolicy:"network-only",clientId:o.value,context:{headers:{"x-hasura-role":r.value}}}));return{mutate:a,loading:u,onDone:n,onError:s}}export{m};

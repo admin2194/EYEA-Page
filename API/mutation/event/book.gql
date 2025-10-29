@@ -1,0 +1,6 @@
+mutation BookEvent($data:  [event_event_booking_insert_input!]!) {
+  insert_event_event_booking(objects: $data) {
+ 
+    affected_rows
+  }
+}

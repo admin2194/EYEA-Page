@@ -1,0 +1,15 @@
+query ($filter:pricing_pricing_plan_frequency_price_bool_exp){
+  items:pricing_pricing_plan_frequency_price (where:$filter order_by:{lump_sum_price:asc}) {
+    id 
+    lump_sum_price
+    frequency
+    pricing_plan{
+      name
+      features:pricing_plan_features{
+        feature{
+          title
+        }
+      }
+    }
+  }
+}

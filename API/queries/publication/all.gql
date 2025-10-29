@@ -1,0 +1,15 @@
+query get_all_publication($filter: content_publications_bool_exp) {
+  items:content_publications(where: $filter) {
+    content
+    featured_media
+    featured_media_type
+    author{
+      name
+    }
+    id
+    publication_date
+    type
+    thumbnail
+    title
+  }
+}

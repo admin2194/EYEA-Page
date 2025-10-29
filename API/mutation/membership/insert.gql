@@ -1,0 +1,5 @@
+mutation insert_member($data: [individual_membership_insert_input!]!) {
+  insert_individual_membership(objects: $data) {
+    affected_rows
+  }
+}

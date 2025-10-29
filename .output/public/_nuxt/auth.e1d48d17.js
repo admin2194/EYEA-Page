@@ -1,0 +1,1 @@
+import{ap as e,B as o,q as t,ah as s}from"./entry.9f9a9dfb.js";const{notify:n}=o(),g=e((r,i,a)=>{if(t().isLoggedIn){console.log("user is logged in");return}else return n({title:"You are not logged in",description:"Please login to continue",cardClass:"bg-red-500"}),s("/login")});export{g as default};

@@ -1,0 +1,7 @@
+query region($filter:basic_cities_bool_exp){
+  items:basic_cities(where:$filter){
+    id
+    name
+  
+  }
+}

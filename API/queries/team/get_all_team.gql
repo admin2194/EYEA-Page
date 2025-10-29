@@ -1,0 +1,33 @@
+query get_all_teams {
+  advisors: content_teams(where: {type: {_eq: advisor}}, order_by: {order: asc}) {
+    Instagram_link
+    facebook_link
+    id
+    image_url
+    linkedin_link
+    name
+    order
+    summary
+  }
+  boards: content_teams(where: {type: {_eq: board}}, order_by: {order: asc}) {
+    Instagram_link
+    facebook_link
+    id
+    image_url
+    linkedin_link
+    name
+    order
+    summary
+  }
+  members: content_teams(where: {type: {_eq: member}}, order_by: {order: asc}) {
+    Instagram_link
+    facebook_link
+    id
+    image_url
+    linkedin_link
+    name
+    order
+    summary
+    title
+  }
+}

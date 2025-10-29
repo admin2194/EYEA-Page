@@ -1,0 +1,40 @@
+query memberships($filter: pricing_invoice_bool_exp) {
+  items: pricing_invoice(where: $filter) {
+    id
+    start_date
+    end_date
+    has_member_paid
+    status
+    total
+    invoice_pricing_plan_frequency_price:pricing_plan_frequency_price {
+      pricing_plan {
+        name
+        features:pricing_plan_features {
+          feature {
+            title
+          }
+        }
+      }
+    }
+    billing {
+      membership_id
+      membership {
+        type:membership_type
+        individual_membership{
+          first_name
+          last_name
+          photo_url
+        }
+        organization_membership{
+          company_name
+          company_logo_url
+        }
+        is_paid
+        is_pending
+        is_accepted
+        is_declined
+        is_suspended
+      }
+    }
+  }
+}

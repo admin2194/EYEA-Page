@@ -1,0 +1,5 @@
+mutation contactUs($data: [content_contact_us_insert_input!]!) {
+  insert_content_contact_us(objects: $data) {
+    affected_rows
+  }
+}

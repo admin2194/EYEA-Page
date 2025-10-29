@@ -1,0 +1,10 @@
+mutation event_booking_token($otp:String! $id:String!){
+  membership_event_token(membership_id:$id, otp:$otp){
+    message
+    data{
+      token
+    }
+    
+  }
+  
+}

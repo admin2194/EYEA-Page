@@ -1,0 +1,15 @@
+query get_all_publication($id: uuid!) {
+  item:content_publications_by_pk(id: $id) {
+    content
+    featured_media
+    featured_media_type
+    id
+    publication_date
+    title
+    type
+    author {
+      name
+    }
+
+  }
+}

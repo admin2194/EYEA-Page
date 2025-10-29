@@ -1,0 +1,8 @@
+mutation signup($data: SignUpInput!) {
+  auth {
+    signup(params: $data) {
+      access_token
+      expires_in
+    }
+  }
+}

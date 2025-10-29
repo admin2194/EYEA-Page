@@ -1,0 +1,14 @@
+query get_one_team($id: uuid!) {
+  content_teams_by_pk(id: $id) {
+    Instagram_link
+    facebook_link
+    id
+    image_url
+    linkedin_link
+    name
+    order
+    summary
+    title
+    type
+  }
+}

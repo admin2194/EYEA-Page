@@ -1,0 +1,1 @@
+import{_ as t,o as n,c,d as o,f as s}from"./entry.9f9a9dfb.js";const _={},r={class:"min-h-[60vh] flex items-center justify-center w-screen bg-transparent"};function a(m,i){const e=s;return n(),c("div",r,[o(e,{name:"eos-icons:bubble-loading",class:"mx-auto text-6xl text-primary dark:text-gray-500"})])}const l=t(_,[["render",a]]);export{l as _};

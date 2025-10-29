@@ -1,0 +1,39 @@
+query EventDetail($id: uuid!) {
+  event_events_by_pk(id: $id) {
+    id
+    title
+    feature_image
+    even_date
+    is_zelela
+    location
+    description
+    event_start_time
+    event_end_time
+    location_coordinates
+    is_expired
+    speakers {
+      photo_url
+      name
+      title
+      description
+    }
+    event_sponsors {
+      sponsor {
+        logo_url
+      }
+    }
+    event_partners {
+      partner_id
+      partner {
+        logo_url
+      }
+    }
+    event_agendas {
+      title
+      start_at
+      end_at
+      venue
+      description
+    }
+  }
+}

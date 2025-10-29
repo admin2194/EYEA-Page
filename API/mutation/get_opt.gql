@@ -1,0 +1,5 @@
+mutation otp($id:String!,$event_type:String!){
+   send_event_otp(membership_id:$id, event_type:$event_type){
+    message
+  }
+}

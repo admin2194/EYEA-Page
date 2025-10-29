@@ -1,0 +1,40 @@
+query AllEvents($limit: Int, $offset: Int) {
+  event_events(
+    limit: $limit
+    offset: $offset # where: { is_zelela: { _eq: true } }
+  ) {
+    title
+    id
+    feature_image
+    even_date
+    location
+    description
+    event_start_time
+    event_end_time
+    is_expired
+    location_coordinates
+    speakers {
+      photo_url
+      name
+      title
+      description
+    }
+    event_partners {
+      partner {
+        logo_url
+      }
+    }
+    event_agendas(order_by: { order: asc }) {
+      title
+      start_at
+      end_at
+      venue
+      description
+    }
+  }
+  event_events_aggregate(where: { is_zelela: { _eq: true } }) {
+    aggregate {
+      count
+    }
+  }
+}

@@ -1,0 +1,15 @@
+query  ($limit:Int,$offset:Int ,$filter:content_publications_bool_exp){
+  items:content_publications  (where:$filter ,limit:$limit ,offset:$offset) {
+    title
+    content
+    featured_media
+    featured_media_type
+    id
+    thumbnail
+    publication_date
+    author{
+    name 
+    }
+    
+  }
+}

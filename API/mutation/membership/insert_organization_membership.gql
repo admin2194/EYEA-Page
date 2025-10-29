@@ -1,0 +1,7 @@
+mutation insert_organization($data: user_organization_membership_insert_input!) {
+  items:insert_user_organization_membership_one(object: $data) {
+    memberships{
+      membership_id
+    }
+  }
+}

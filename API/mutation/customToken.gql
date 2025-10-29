@@ -1,0 +1,7 @@
+mutation token($id_token: String!) {
+  custom_token(id_token: $id_token) {
+    data {
+      custom_token
+    }
+  }
+}

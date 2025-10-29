@@ -1,0 +1,5 @@
+mutation interest($data: [content_interests_insert_input!]!) {
+  insert_content_interests(objects: $data) {
+  affected_rows
+  }
+}

@@ -1,0 +1,10 @@
+mutation ($set: pricing_invoice_set_input, $membership_id: String) {
+  update_pricing_invoice(
+    where: { billing: { membership_id: { _eq: $membership_id } } }
+    _set: $set
+  ) {
+    returning {
+      id
+    }
+  }
+}

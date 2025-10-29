@@ -1,0 +1,8 @@
+{
+  user_individual_membership{
+    id
+  }
+  user_organization_membership{
+    id
+  }
+}

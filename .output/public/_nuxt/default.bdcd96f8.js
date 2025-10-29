@@ -1,0 +1,1 @@
+import{_ as o,c as s,I as t,o as c}from"./entry.9f9a9dfb.js";const r={},a={class:"w-full max-w-screen-4xl overflow-x-hidden mx-auto"};function n(e,l){return c(),s("div",a,[t(e.$slots,"default")])}const d=o(r,[["render",n]]);export{d as default};
